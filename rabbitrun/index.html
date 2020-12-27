@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>奔跑吧兔子</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.01, minimal-ui"/>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background: url("./images/bg.jpg");
+      }	
+      canvas {	
+        -ms-touch-action: none;
+        image-rendering: -o-crisp-edges;           
+        image-rendering: optimize-contrast;        
+        -ms-interpolation-mode: nearest-neighbor;  
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -moz-tap-highlight-color: rgba(0,0,0,0);
+        tap-highlight-color: rgba(0,0,0,0);
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      } 
+      #toolbar{
+        position:absolute;
+        left:0px;
+        top:1%;
+        width:100%;
+        text-align:center;
+        z-index:99;
+        display:none;
+      }
+      #toolbar img{
+        width:40%;
+      }
+      #game9g9gstart{
+        top:12%;
+      }
+    </style>
+    <script src="./viewporter.js"></script>
+  </head>
+
+  <body> 
+    <div id="toolbar">
+
+    </div>
+    <div id="viewporter">
+      <canvas id="canvas" moz-opaque></canvas>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function launchFullscreen(element) {
+      element.style.backgroundImage = "url('./images/bg.jpg')";
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+      }
+    }
+  </script>
+  <script src="./TweenMax.min.js"></script>
+  <script src="./howler.js"></script>
+  <script src="./VisibilityManager.js"></script>
+  <script src="./app.js"></script>
+  <script>
+    function goHome() {
+
+    }
+    function clickMore() {
+      try {
+        window.location.href = '/';
+      } catch (e) {
+      }
+    }
+    function dp_share() {
+      window.location.href = '/';
+    }
+    function dp_Ranking() {
+      window.location.href = '/';
+    }
+    function showAd() {
+    }
+    function hideAd() {
+    }
+    function dp_submitScore(score) {//游戏结束时执行
+
+    }
+    function updateShare(bestScore) {
+
+    }
+  </script>
+</html>
